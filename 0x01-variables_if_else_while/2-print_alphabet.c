@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - putchr exercice
- * Return: always return 0 (success)
+ * main - main function
+ * Return: always return 0
  */
 int main(void)
 {
@@ -12,6 +12,6 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
