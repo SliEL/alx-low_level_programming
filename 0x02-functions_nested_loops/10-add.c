@@ -9,7 +9,7 @@ int add(int n, int m)
 {
 	int sum = n + m;
 	int digits[10];
-	int i = 0;
+	int i = 0, j;
 
 	if (sum == 0)
 	{
@@ -23,7 +23,7 @@ int add(int n, int m)
 		sum /= 10;
 		i++;
 	}
-	for (int j = i - 1; j >= 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(digits[j] + '0');
 	}
