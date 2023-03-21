@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main - print alphabets once
- * Return: 0
+ * print alphabet in lowercase
  */
 void print_alphabet(void)
 {
@@ -11,7 +10,7 @@ void print_alphabet(void)
 	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
-		i++;
+		i++
 	}
 	_putchar('\n');
 	return;
