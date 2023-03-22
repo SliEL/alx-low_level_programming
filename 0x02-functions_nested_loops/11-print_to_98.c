@@ -5,7 +5,7 @@
  * @n: ineteger
  * Return: 0
  */
-int print_to_98(int n)
+void print_to_98(int n)
 {       
 	int i;
         
@@ -13,7 +13,6 @@ int print_to_98(int n)
 	{       
 		printf("%d", n);
 		printf("\n");
-		return (0);
 	}       
 	else if (n > 98)
 	{       
@@ -25,8 +24,7 @@ int print_to_98(int n)
 				printf(", ");
 			}       
 		}
-	  	printf("\n");	
-		return (0);
+	  	printf("\n");
 	}
 	else
 	{
@@ -39,6 +37,5 @@ int print_to_98(int n)
 			}       
 		}
 		printf("\n");
-		return (0);
 	}
 }
