@@ -6,24 +6,24 @@
 int main(void)
 {
 	int i = 0;
-	int f = 1;
-	int s = 2;
+	long f = 1;
+	long s = 2;
 
 	while (i < 50)
 	{
 		if (i == 0)
 		{
-			printf("%d", f);
+			printf("%ld", f);
 		}
 		else if (i == 1)
 		{
-			printf(", %d", s);
+			printf(", %ld", s);
 		}
 		else
 		{
 			s += f;
 			f = s - f;
-			printf(", %d", s);
+			printf(", %ld", s);
 		}
 		i++;
 	}
