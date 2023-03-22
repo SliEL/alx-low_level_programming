@@ -17,13 +17,13 @@ int main(void)
 		}
 		else if (i == 1)
 		{
-			printf("%d", s);
+			printf(", %d", s);
 		}
 		else
 		{
 			s += f;
 			f = s - f;
-			printf("%d", s);
+			printf(", %d", s);
 		}
 		i++;
 	}
