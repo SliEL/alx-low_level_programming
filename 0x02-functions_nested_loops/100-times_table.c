@@ -12,9 +12,9 @@ void print_times_table(int n)
 	{
 		return;
 	}
-	for (x = 0; x < n; x++)
+	for (x = 0; x < n + 1; x++)
 	{
-		for (y = 0; y < n; y++)
+		for (y = 0; y < n + 1; y++)
 		{
 			z = x * y;
 			if (z > 9)
