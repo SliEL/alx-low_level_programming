@@ -15,7 +15,7 @@ void rev_string(char *s)
 	e--;
 
 	/* swap chars using the temp variable */
-	while (e != s)
+	while (e >= s)
 	{
 		temp = *e;
 		*e = *s;
