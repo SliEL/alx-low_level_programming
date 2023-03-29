@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int digit;
 	int max_div_10 = INT_MAX / 10;
 
-	while (*s)
+	while (*s != '\0')
 	{
 		if (*s == '-')
 		{
