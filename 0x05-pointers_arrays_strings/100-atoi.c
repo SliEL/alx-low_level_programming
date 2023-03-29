@@ -26,7 +26,7 @@ int _atoi(char *s)
 		{
 			digit = *s - '0';
 			result = result * 10 + digit;
-			s++
+			s++;
 		}
 		else
 		{
