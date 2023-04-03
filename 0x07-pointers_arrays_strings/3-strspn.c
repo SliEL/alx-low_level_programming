@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strspn - Returns the number of bytes in the initial segment of s which consist only of bytes from accept
+ * _strspn - Returns len of a prefix substring
  * @s:pointer
  * @accept: pointer
  * Return: integer
