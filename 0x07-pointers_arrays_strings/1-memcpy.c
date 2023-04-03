@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * char _memcpy - copy memory area
+ * _memcpy - copy memory area
  * @dest: pointer
  * @src: pointer
  * @n: integer
