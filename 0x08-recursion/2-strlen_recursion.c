@@ -4,13 +4,11 @@
  * @s: pointer
  * Return: integer
  */
-int _strlen_recusrion(char *s)
+int _strlen_recursion(char *s)
 {
-	int len = 0;
 	
 	if (!*s)
-		return (len);
-	len++;
-	s++;
-	_strlen_recursion(s);
+		return (0);
+	
+	return (_strlen_recursion(s + 1) + 1);
 }
