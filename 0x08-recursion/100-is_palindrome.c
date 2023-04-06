@@ -19,6 +19,19 @@ int is_pal(char *s, int start, int end)
 }
 
 /**
+ * _strlen - returns len of a string
+ * @s: string
+ * Return: len
+ */
+
+int _strlen(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen(s + 1));
+}
+
+/**
  * is_palindrome - return 1 if string is palindrome and 0 if not
  * @s: string
  * Return: 1 if string is plindrome and 0 if not.
@@ -26,9 +39,5 @@ int is_pal(char *s, int start, int end)
 
 int is_palindrome(char *s)
 {
-	int len = 0;
-
-	while (s[len] != '\0')
-		len++;
-	return (is_pal(s, 0, len - 1));
+	return (is_pal(s, 0, _strlen(s) - 1));
 }
