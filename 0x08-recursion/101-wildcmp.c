@@ -19,7 +19,7 @@ int wildcmp(char *s1, char *s2)
 
 	/* if s2 is equal to * */
 	if (*s2 == '*')
-		return (wildcmp(s1 + 1, s2 + 1) || wildcmp(s1, s2 + 1));
+		return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
 
 	/* if none of the cases above is true, strings don't match*/
 	return (0);
