@@ -45,7 +45,7 @@ int _atoi(const char *str)
  * @argv: array of strings
  * Return: 0 for success or 1 for error
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	if (argv[1] && argv[2])
 	{
