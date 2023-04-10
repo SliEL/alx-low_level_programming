@@ -17,8 +17,9 @@ int main(int argc __attribute((unused)), char *argv[])
 		printf("Error\n");
 		return (0);
 	}
-       
+
 	cents = atoi(argv[1]);
+
 	if (cents < 0)
 	{
 		printf("0\n");
