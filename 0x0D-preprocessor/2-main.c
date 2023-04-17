@@ -3,7 +3,8 @@
  * main - prints the path to current file
  * Return: nothing
  */
-void main(void)
+int  main(void)
 {
 	printf("%s\n", __FILE__);
+	return (0);
 }
