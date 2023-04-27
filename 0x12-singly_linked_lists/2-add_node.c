@@ -3,13 +3,13 @@
 #include "lists.h"
 
 /**
- * add_node_end - add a node to the end of the ll.
+ * add_node- add a node to the end of the ll.
  * @head: pointer to the pointer to the head
  * @str: node value
  * Return: address of new element or NUll.
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
 	unsigned int len = 0;
