@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * size_t list_len - function that prints the len of the list
