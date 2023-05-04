@@ -9,20 +9,24 @@
 
 void print_binary(unsigned long int n)
 {
-	int i;
-	unsigned long int mask;
+	int i, count = 0;
 
-	mask = 1UL << ((sizeof(unsigned long int) * 8) - 1);
-	while (mask > 0)
+	for (i = sizeof(unsigned long int) * 8 - 1; i >= 0; i--)
 	{
-		if ((n & mask) == 0)
+		unsigned long int mask = 1 << i;
+		if (n & mask)
 		{
-			printf("0");
+			_putchar('1');
+			count++;
 		}
-		else
+		else if (count > 0)
 		{
-			printf("1");
+			_putchar('0');
 		}
-		mask >>= 1;
+	}
+
+	if (count == 0)
+	{
+		_putchar('0');
 	}
 }
