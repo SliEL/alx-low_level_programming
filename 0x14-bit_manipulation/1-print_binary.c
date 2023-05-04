@@ -13,8 +13,8 @@ void print_binary(unsigned long int n)
 
 	for (i = 63; i >= 0; i--)
 	{
-		unsigned long int mask = 1 << i;
-		if (n & mask)
+		unsigned long int mask = n >> i;
+		if (1 & mask)
 		{
 			_putchar('1');
 			count++;
