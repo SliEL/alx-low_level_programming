@@ -14,7 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 		return (-1);
 
 	/* create a mask with 0 bit at given index*/
-	/* do OR bitwise operation with *n */
+	/* do AND bitwise operation with *n */
 
 	*n &= ~(1 << index);
 
