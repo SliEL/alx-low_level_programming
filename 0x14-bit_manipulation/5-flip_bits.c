@@ -8,6 +8,7 @@
  *
  * Return: the number of bits needed to flip
  */
+
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int count = 0;
