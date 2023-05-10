@@ -92,9 +92,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	r = read(fd_from, buffer, 1024);
-
-	while (r > 0)
+	while ((r = read(fd_from, buffer, 1024)) > 0)
 	{
 		w = write(fd_to, buffer, r);
 
