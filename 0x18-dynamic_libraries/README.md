@@ -1,0 +1,1 @@
+# dynamic libraries ( learning how to create dynamic libararies in linux )
